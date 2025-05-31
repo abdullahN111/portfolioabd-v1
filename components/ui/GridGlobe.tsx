@@ -27,7 +27,7 @@ const GridGlobe = () => {
     rings: 1,
     maxRings: 3,
     initialPosition: { lat: 22.3193, lng: 114.1694 },
-    autoRotate: true,
+    autoRotate: false,
     autoRotateSpeed: 0.5,
   };
   const colors = ["#06b6d4", "#3b82f6", "#6366f1"];
@@ -393,6 +393,8 @@ const GridGlobe = () => {
       color: colors[Math.floor(Math.random() * (colors.length - 1))],
     },
   ];
+
+  
 
   return (
 

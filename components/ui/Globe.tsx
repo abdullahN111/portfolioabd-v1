@@ -89,7 +89,7 @@ export function Globe({ globeConfig, data }: WorldProps) {
     arcTime: 2000,
     arcLength: 0.9,
     rings: 1,
-    maxRings: 3,
+    maxRings: 2,
     ...globeConfig,
   };
 
@@ -153,7 +153,7 @@ export function Globe({ globeConfig, data }: WorldProps) {
     if (globeRef.current && globeData) {
       globeRef.current
         .hexPolygonsData(countries.features)
-        .hexPolygonResolution(3)
+        .hexPolygonResolution(2)
         .hexPolygonMargin(0.7)
         .showAtmosphere(defaultProps.showAtmosphere)
         .atmosphereColor(defaultProps.atmosphereColor)
@@ -191,7 +191,7 @@ export function Globe({ globeConfig, data }: WorldProps) {
       .pointColor((e) => (e as { color: string }).color)
       .pointsMerge(true)
       .pointAltitude(0.0)
-      .pointRadius(2);
+      .pointRadius(1);
 
     globeRef.current
       .ringsData([])
@@ -202,27 +202,24 @@ export function Globe({ globeConfig, data }: WorldProps) {
         (defaultProps.arcTime * defaultProps.arcLength) / defaultProps.rings
       );
   };
+useEffect(() => {
+  if (!globeRef.current || !globeData) return;
 
-  useEffect(() => {
+  const interval = setInterval(() => {
     if (!globeRef.current || !globeData) return;
+    numbersOfRings = genRandomNumbers(
+      0,
+      data.length,
+      Math.floor((data.length * 2) / 5) 
+    );
 
-    const interval = setInterval(() => {
-      if (!globeRef.current || !globeData) return;
-      numbersOfRings = genRandomNumbers(
-        0,
-        data.length,
-        Math.floor((data.length * 4) / 5)
-      );
+    globeRef.current.ringsData(
+      globeData.filter((d, i) => numbersOfRings.includes(i))
+    );
+  }, 4000); 
 
-      globeRef.current.ringsData(
-        globeData.filter((d, i) => numbersOfRings.includes(i))
-      );
-    }, 2000);
-
-    return () => {
-      clearInterval(interval);
-    };
-  }, [globeRef.current, globeData]);
+  return () => clearInterval(interval);
+}, [globeRef.current, globeData]);
 
   return (
     <>
