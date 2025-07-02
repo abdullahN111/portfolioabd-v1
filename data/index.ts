@@ -95,14 +95,14 @@ export const projects = [
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
     link: "https://resumeabd.vercel.app/",
   },
-  // {
-  //   id: 4,
-  //   title: "Animated Apple Iphone 3D Website",
-  //   des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-  //   img: "/p4.svg",
-  //   iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-  //   link: "https://ui.apple.com",
-  // },
+  {
+    id: 4,
+    title: "Python CLI Projects",
+    des: "Collection of Python CLI projects stored in a Repository Clone it and run..",
+    img: "/projects/python.png",
+    iconLists: ["/python.svg", "/cli.svg"],
+    link: "https://github.com/abdullahN111/python-cli-projects",
+  },
 ];
 
 export const testimonials = [
