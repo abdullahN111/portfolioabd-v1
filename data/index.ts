@@ -103,6 +103,15 @@ export const projects = [
     iconLists: ["/python.svg", "/cli.svg"],
     link: "https://github.com/abdullahN111/python-cli-projects",
   },
+  {
+  id: 5,
+  title: "AI Agents CLI Projects",
+  des: "A collection of CLI-based AI agents using OpenAI Agent SDK. Clone the repo and explore how autonomous agents work.",
+  img: "/projects/agents.png", 
+  iconLists: ["/python.svg", "/cli.svg", "/openai.svg"],
+  link: "https://github.com/abdullahN111/ai-agents",
+}
+
 ];
 
 export const testimonials = [
