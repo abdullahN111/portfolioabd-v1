@@ -1,6 +1,6 @@
 import MagicButton from "./ui/MagicButton";
 import { Spotlight } from "./ui/Spotlight";
-import { FaLocationArrow } from "react-icons/fa6";
+import { FaDownload } from "react-icons/fa6";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 
 const Hero = () => {
@@ -34,10 +34,10 @@ const Hero = () => {
             Hi! I&apos;m Abdullah, a Full Stack Developer based in Pakistan.
           </p>
 
-          <a href="#about">
+          <a href="/Resume.pdf" download>
             <MagicButton
-              title="Show my work"
-              icon={<FaLocationArrow />}
+              title="Resume"
+              icon={<FaDownload />}
               position="right"
             />
           </a>
