@@ -73,6 +73,14 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
+    title: "Pak Alpha - A Manufacturing Company Website",
+    des: "Corporate website for Pak Alpha, built with Next.js 15 and TailwindCSS. Features a responsive design, custom contact form integrated with Resend for email handling.",
+    img: "/projects/pakalpha.png",
+    iconLists: ["/next.svg", "/tail.svg", "/react.svg", "/react-icon-0.jpg"],
+    link: "https://www.alphaalalamiyya.com/",
+  },
+  {
+    id: 2,
     title: "Furniro - An E-commerce Furniture Store",
     des: "A fully functional e-commerce furniture store with a payment system, user authentication, and a beautiful UI.",
     img: "/projects/furniro.png",
@@ -80,7 +88,7 @@ export const projects = [
     link: "https://furniro-abd.vercel.app/",
   },
   {
-    id: 2,
+    id: 3,
     title: "AbdBlog - A Blogging Website",
     des: "A blogging website with a beautiful UI and a fully functional backend.",
     img: "/projects/blogabd.png",
@@ -88,7 +96,7 @@ export const projects = [
     link: "https://abd-blog.vercel.app/",
   },
   {
-    id: 3,
+    id: 4,
     title: "Resume Abd. - A Resume Builder",
     des: "A resume builder with a beautiful UI and a variety of fields.",
     img: "/projects/resumeabd.jpg",
@@ -96,7 +104,7 @@ export const projects = [
     link: "https://resumeabd.vercel.app/",
   },
   {
-    id: 4,
+    id: 5,
     title: "Python CLI Projects",
     des: "Collection of Python CLI projects stored in a Repository Clone it and run..",
     img: "/projects/python.png",
@@ -104,7 +112,7 @@ export const projects = [
     link: "https://github.com/abdullahN111/python-cli-projects",
   },
   {
-  id: 5,
+  id: 6,
   title: "AI Agents CLI Projects",
   des: "A collection of CLI-based AI agents using OpenAI Agent SDK. Clone the repo and explore how autonomous agents work.",
   img: "/projects/agents.png", 
