@@ -75,8 +75,8 @@ export const projects = [
     id: 1,
     title: "Pak Alpha - A Manufacturing Company Website",
     des: "Corporate website for Pak Alpha, built with Next.js 15 and TailwindCSS. Features a responsive design, custom contact form integrated with Resend for email handling.",
-    img: "/projects/pakalpha.png",
-    iconLists: ["/next.svg", "/tail.svg", "/react.svg", "/react-icon-0.jpg"],
+    img: "/projects/pakalpha.jpg",
+    iconLists: ["/next.svg", "/tail.svg", "/react.svg", "/js.svg", "/react-icon-0.jpg"],
     link: "https://www.alphaalalamiyya.com/",
   },
   {
