@@ -36,7 +36,7 @@ const RecentProjects = () => {
                         alt=""
                         width={250}
                         height={270}
-                        className="z-10 absolute bottom-0 w-[260px] h-[130px] lg:h-[190px] rounded-t-md"
+                        className="z-10 absolute bottom-0 w-[260px] h-[130px] lg:h-[190px] rounded-none lg:rounded-t-md"
                       />
                     </div>
                     <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
