@@ -198,7 +198,7 @@ export const workExperience = [
   },
   {
     id: 2,
-    title: "Dashboard - Benison",
+    title: "Dashboard",
     desc: "Assisted in the development of a PHP dashboard.",
     className: "md:col-span-2",
     thumbnail: "/exp2.svg",
